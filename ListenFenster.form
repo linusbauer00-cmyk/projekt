@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="projektarbeit.ListenFenster">
+  <grid id="27dc6" binding="hauptPanel" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="68cf9" class="javax.swing.JLabel" binding="gespeicherteAutosLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="gespeicherte Autos:"/>
+        </properties>
+      </component>
+      <component id="2e1e4" class="javax.swing.JLabel" binding="filterLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Filter:"/>
+        </properties>
+      </component>
+      <component id="88c21" class="javax.swing.JLabel" binding="auswahlLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Auswahl:"/>
+        </properties>
+      </component>
+      <component id="41bfe" class="javax.swing.JComboBox" binding="filtercomboBox1">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <model>
+            <item value="Farbe"/>
+            <item value="Motor"/>
+            <item value="Bezeichnung"/>
+            <item value="Alle"/>
+          </model>
+          <toolTipText value="" noi18n="true"/>
+        </properties>
+      </component>
+      <component id="77d6a" class="javax.swing.JComboBox" binding="auswahlcomboBox2">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="9ee2a" class="javax.swing.JButton" binding="zurueckbutton1">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Zurück"/>
+        </properties>
+      </component>
+      <scrollpane id="3b43e">
+        <constraints>
+          <grid row="1" column="0" row-span="3" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="988be" class="javax.swing.JTable" binding="gespeichertetable1">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="24fe8" class="javax.swing.JLabel" binding="sortierLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Sortierung:"/>
+        </properties>
+      </component>
+      <component id="e66e1" class="javax.swing.JComboBox" binding="sortiercomboBox1">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Preis aufsteigend"/>
+            <item value="Preis absteigend"/>
+            <item value="Gewicht aufsteigend"/>
+            <item value="Gewicht absteigend"/>
+          </model>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
