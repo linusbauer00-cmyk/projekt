@@ -75,12 +75,8 @@ public class Autofenster extends JFrame{
         durchschnittbutton1.addActionListener(new ActionListener() { //Durchschnittspreis berechnen
             @Override
             public void actionPerformed(ActionEvent e) {
-                double summe = 0.0;
-                for (Auto auto : autoliste){
-                    summe += auto.getPreis();
-                }
-                double durchschnittspreis = summe / autoliste.size();
-                JOptionPane.showMessageDialog(null, durchschnittspreis, "Der Durchschnittspreis beträgt", JOptionPane.INFORMATION_MESSAGE);
+                double wert = durchschnittsPreis();
+                JOptionPane.showMessageDialog(null, wert, "Der Durchschnittspreis beträgt", JOptionPane.INFORMATION_MESSAGE);
             }
         });
         listebutton2.addActionListener(new ActionListener() { // Listenfenster wird geöffnet
@@ -112,5 +108,16 @@ public class Autofenster extends JFrame{
 
     }
 
+    public double durchschnittsPreis(){
+        double summe = 0.0;
+        for (Auto auto : autoliste){
+            summe += auto.getPreis();
+        }
+        double durchschnittsPreis = summe / autoliste.size();
+        return Math.floor(durchschnittspreis * 100.0) / 100.0d;
+        //damit durchschnittspreis auf zwei nachkommastellen abgerundet ist
+
+    }
 
 }
+
